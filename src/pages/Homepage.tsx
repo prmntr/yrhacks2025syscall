@@ -8,18 +8,20 @@ function Homepage() {
         autoPlay
         loop
       ></video>
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black to-transparent opacity-70 z-5"></div>
-      <div className="relative z-10 flex flex-col items-start justify-center m-10 space-y-4">
-        <h1 className="text-4xl md:text-5xl font-bold" role="heading" aria-level={1}>
-        Tutoring done right.
-        </h1>
-        <p className="text-lg md:text-xl">
-        Empowering students through modernized software.
-        </p>
-        <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
-        Learn More
-        </button>
-      </div>
+      <div className="absolute top-0 left- w-full h-full bg-gradient-to-r from-black to-transparent opacity-70 z-5"></div>
+      <div className="relative z-10 flex flex-col items-start justify-center h-screen text-left space-y-4 ml-10">
+  <h1 className="text-4xl md:text-5xl font-bold" role="heading" aria-level={1}>
+    Tutoring done right.
+  </h1>
+  <p className="text-lg md:text-xl">
+    Empowering students through modernized software.
+  </p>
+  <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
+    Learn More
+  </button>
+</div>
+
+
       </header>
 
       <main id="main" className="max-w-7xl mx-auto p-8 space-y-16" role="main">
