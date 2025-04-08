@@ -53,7 +53,7 @@ function Dashboard() {
       <div className="bg-gray-800 shadow-xl rounded-lg p-4">
         <h2 className="text-xl font-semibold mb-4 text-gray-100">Upcoming Classes</h2>
         <div className="flex flex-row items-center mb-4">
-        <div className="bg-gray-700 text-gray-200 p-2 rounded">fdsdfs</div>
+        <div className="bg-gray-700 text-gray-200 p-2 rounded">Calculas and Vectors -  James Johnson  - April 12th  -  03:30PM  </div>
         </div>
       </div>
       <div className="bg-gray-800 shadow-xl rounded-lg p-4">
