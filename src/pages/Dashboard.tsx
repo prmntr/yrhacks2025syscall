@@ -1,5 +1,6 @@
+import { useState } from "react";
+
 function Dashboard() {
-  import { useState } from "react";
 
   const today = new Date();
   const [currentMonth, setCurrentMonth] = useState(today.getMonth());
