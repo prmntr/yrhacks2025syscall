@@ -7,6 +7,7 @@ import Students from './pages/Tutors';
 import Messages from './pages/Messages';
 import Profile from './pages/Profile';
 import Error from './pages/Error';
+import Homepage from './pages/Homepage';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<div>Homepage</div>} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/students" element={<Students />} />
           <Route path="/messages" element={<Messages />} />
