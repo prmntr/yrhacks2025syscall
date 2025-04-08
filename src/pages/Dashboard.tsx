@@ -1,4 +1,47 @@
 function Dashboard() {
+  import { useState } from "react";
+
+  const today = new Date();
+  const [currentMonth, setCurrentMonth] = useState(today.getMonth());
+  const [currentYear, setCurrentYear] = useState(today.getFullYear());
+
+  const getDaysInMonth = (year: number, month: number) => {
+    return new Date(year, month + 1, 0).getDate();
+  };
+
+  const getFirstDayOfMonth = (year: number, month: number) => {
+    return new Date(year, month, 1).getDay();
+  };
+
+  const handlePrev = () => {
+    if (currentMonth === 0) {
+      setCurrentMonth(11);
+      setCurrentYear(currentYear - 1);
+    } else {
+      setCurrentMonth(currentMonth - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentMonth === 11) {
+      setCurrentMonth(0);
+      setCurrentYear(currentYear + 1);
+    } else {
+      setCurrentMonth(currentMonth + 1);
+    }
+  };
+
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const daysInMonth = getDaysInMonth(currentYear, currentMonth);
+  const firstDayIndex = getFirstDayOfMonth(currentYear, currentMonth);
+  const calendarDays = Array(firstDayIndex).fill(null).concat(
+    Array.from({ length: daysInMonth }, (_, i) => i + 1)
+  );
+
   return (
     <>
       <h1 className="font-bold m-5 text-4xl">Dashboard</h1>
@@ -18,10 +61,10 @@ function Dashboard() {
       </div>
       <div className="col-span-1 md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow px-6 py-4 m-4">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold">April 2025</h2>
+          <h2 className="text-xl font-bold">{monthNames[currentMonth]} {currentYear}</h2>
           <div className="space-x-2">
-            <button className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Prev</button>
-            <button className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Next</button>
+            <button onClick={handlePrev} className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Prev</button>
+            <button onClick={handleNext} className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Next</button>
           </div>
         </div>
 
@@ -36,37 +79,15 @@ function Dashboard() {
         </div>
 
         <div className="grid grid-cols-7 text-center mt-2 gap-2 text-sm">
-          <div></div><div></div><div></div><div></div><div></div><div></div>
-          <div className="py-2 rounded bg-blue-100 font-semibold text-blue-800">1</div>
-          <div className="py-2 rounded hover:bg-gray-200">2</div>
-          <div className="py-2 rounded hover:bg-gray-200">3</div>
-          <div className="py-2 rounded hover:bg-gray-200">4</div>
-          <div className="py-2 rounded hover:bg-gray-200">5</div>
-          <div className="py-2 rounded hover:bg-gray-200">6</div>
-          <div className="py-2 rounded hover:bg-gray-200">7</div>
-          <div className="py-2 rounded hover:bg-gray-200">8</div>
-          <div className="py-2 rounded hover:bg-gray-200">9</div>
-          <div className="py-2 rounded hover:bg-gray-200">10</div>
-          <div className="py-2 rounded hover:bg-gray-200">11</div>
-          <div className="py-2 rounded hover:bg-gray-200">12</div>
-          <div className="py-2 rounded hover:bg-gray-200">13</div>
-          <div className="py-2 rounded hover:bg-gray-200">14</div>
-          <div className="py-2 rounded hover:bg-gray-200">15</div>
-          <div className="py-2 rounded hover:bg-gray-200">16</div>
-          <div className="py-2 rounded hover:bg-gray-200">17</div>
-          <div className="py-2 rounded hover:bg-gray-200">18</div>
-          <div className="py-2 rounded hover:bg-gray-200">19</div>
-          <div className="py-2 rounded hover:bg-gray-200">20</div>
-          <div className="py-2 rounded hover:bg-gray-200">21</div>
-          <div className="py-2 rounded hover:bg-gray-200">22</div>
-          <div className="py-2 rounded hover:bg-gray-200">23</div>
-          <div className="py-2 rounded hover:bg-gray-200">24</div>
-          <div className="py-2 rounded hover:bg-gray-200">25</div>
-          <div className="py-2 rounded hover:bg-gray-200">26</div>
-          <div className="py-2 rounded hover:bg-gray-200">27</div>
-          <div className="py-2 rounded hover:bg-gray-200">28</div>
-          <div className="py-2 rounded hover:bg-gray-200">29</div>
-          <div className="py-2 rounded hover:bg-gray-200">30</div>
+          {calendarDays.map((day, index) =>
+            day ? (
+              <div key={index} className="py-2 rounded hover:bg-gray-200">
+                {day}
+              </div>
+            ) : (
+              <div key={index}></div>
+            )
+          )}
         </div>
       </div>
     </>
