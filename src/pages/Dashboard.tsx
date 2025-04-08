@@ -69,7 +69,7 @@ function Dashboard() {
                 className="absolute inset-0 w-full h-full object-cover opacity-10 rounded"
               />
               <div className="relative z-10">
-                <span>You're teaching</span>
+                <span>You're Tutoring</span>
                 <h3 className="font-bold">Calculus and Vectors</h3>
                 <div className="text-md text-gray-300">to Elijah Woods</div>
                 <div className="text-sm font-thin text-gray-300">in 2 days</div>
@@ -109,7 +109,7 @@ function Dashboard() {
                 className="absolute inset-0 w-full h-full object-cover opacity-10 rounded"
               />
               <div className="relative z-10">
-                <span>You're teaching</span>
+                <span>You're Tutoring</span>
                 <h3 className="font-bold">Calculus and Vectors</h3>
                 <div className="text-md text-gray-300">to Donda West</div>
                 <div className="text-sm font-thin text-gray-300">in a week</div>
