@@ -26,7 +26,7 @@ function Profile() {
           {/* Profile Image */}
           <img
             className="w-24 h-24 mb-3 rounded-full shadow-lg"
-            src="src\assets\react.svg"
+            src="src\assets\skibidi.jpg"
             alt="Profile Image"
           />
           {/* Name and Description */}
