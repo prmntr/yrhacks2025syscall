@@ -21,8 +21,8 @@ function Profile() {
       </div>
 
       {/* Profile Content */}
-      <div className="mx-4 mt-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 min-h-screen">
-        <div className="flex flex-row items-center px-5 py-5">
+      <div className="mx-4 mt-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 ">
+        <div className="flex flex-row items-center px-5 py-10">
           {/* Profile Image */}
           <img
             className="w-24 h-24 mb-3 rounded-full shadow-lg"

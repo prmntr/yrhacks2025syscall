@@ -116,7 +116,7 @@ function Dashboard() {
                 <div className="flex justify-between items-center mt-2">
                   <div className="text-sm text-gray-300">
                     <span className="bg-gray-800 px-2 py-1 rounded">Materials</span>
-                    <span className="bg-gray-800 px-2 py-1 mx-2 rounded">Key Concepts</span>
+                    <span className="bg-gray-800 px-2 py-1 mx-2 rounded">Spreadsheet</span>
                   </div>
                   <div className="text-gray-400 cursor-pointer text-3xl">...</div>
                 </div>
