@@ -12,11 +12,27 @@ function Profile() {
           {/* Name and Description */}
           <div className="ml-6">
             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">John Doe</h5>
-            <span className="text-sm text-gray-500 dark:text-gray-400">Tutor and Student</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">Grade 69</span>
           </div>
-          <div className="mx-9">
-            <h6 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">24</h6>
-            <span className="text-sm text-gray-500 dark:text-gray-400">Students Tutored</span>
+            <div className="flex ml-auto space-x-12 px-5">
+            <div className="ml-20">
+              <span className="text-sm text-gray-500 dark:text-gray-400">Students Tutored</span>
+              <h6 className="mb-1 text-center text-3xl font-bold text-gray-900 dark:text-white">
+                3
+              </h6>
+            </div>
+            <div className="ml-12">
+              <span className="text-sm text-gray-500 dark:text-gray-400">Educated Hours</span>
+              <h6 className="mb-1 text-center text-3xl font-bold text-gray-900 dark:text-white">
+                24
+              </h6>
+            </div>
+            <div className="lg:ml-12 flex flex-col items-center">
+              <span className="text-sm text-gray-500 dark:text-gray-400 mb-0.5">
+                Teaching Since
+              </span>
+              <h6 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">Jan 2025</h6>
+            </div>
           </div>
         </div>
         <div className="flex justify-center  md:mt-6 mb-5 mt-5">
