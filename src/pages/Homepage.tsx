@@ -14,9 +14,12 @@ function Homepage() {
             Tutoring done right.
           </h1>
           <p className="text-lg md:text-xl">Empowering students through modernized software.</p>
-          <button className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition">
-            Learn More
-          </button>
+            <button
+            className="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition"
+            onClick={() => (window.location.href = '/dashboard')}
+            >
+            My Dashboard
+            </button>
         </div>
       </header>
 
