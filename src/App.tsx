@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Students from './pages/Students';
 import Messages from './pages/Messages';
 import Profile from './pages/Profile';
-import Error from './pages/error';
+import Error from './pages/Error';
 
 function App() {
 
