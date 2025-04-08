@@ -62,20 +62,65 @@ function Dashboard() {
         <div className="bg-gray-800 shadow-xl rounded-lg p-4 col-span-2 md:col-span-2">
           <h2 className="text-xl font-semibold mb-4 text-gray-100">Upcoming Classes</h2>
           <div className="space-y-4">
-            <div className="bg-blue-900 text-gray-200 p-3 rounded">
-              <div className="font-bold">Calculus and Vectors</div>
-              <div className="text-sm text-gray-300">James Johnson - in 3 days</div>
-              <div className="text-gray-400 text-right cursor-pointer mt-2">...</div>
+            <div className="bg-blue-900 text-gray-200 p-3 rounded relative">
+              <img
+                src="src/assets/calculus.png"
+                alt="Calculus"
+                className="absolute inset-0 w-full h-full object-cover opacity-10 rounded"
+              />
+              <div className="relative z-10">
+                <span>You're teaching</span>
+                <h3 className="font-bold">Calculus and Vectors</h3>
+                <div className="text-md text-gray-300">to Elijah Woods</div>
+                <div className="text-sm font-thin text-gray-300">in 2 days</div>
+                <div className="flex justify-between items-center mt-2">
+                  <div className="text-sm text-gray-300">
+                    <span className="bg-gray-800 px-2 py-1 rounded">Materials</span>
+                    <span className="bg-gray-800 px-2 py-1 mx-2 rounded">Key Concepts</span>
+                  </div>
+                  <div className="text-gray-400 cursor-pointer text-3xl">...</div>
+                </div>
+              </div>
             </div>
-            <div className="bg-green-900 text-gray-200 p-3 rounded">
-              <div className="font-bold">Physics Lab</div>
-              <div className="text-sm text-gray-300">Sarah Lee - in 5 days</div>
-              <div className="text-gray-400 text-right cursor-pointer mt-2">...</div>
+            <div className="bg-green-900 text-gray-200 p-3 rounded relative">
+              <img
+                src="src\assets\chemistry.jpg"
+                alt="Chemistry"
+                className="absolute inset-0 w-full h-full object-cover opacity-10 rounded"
+              />
+              <div className="relative z-10">
+                <span>You're learning</span>
+                <h3 className="font-bold">Grade 12 Chemistry</h3>
+                <div className="text-md text-gray-300">from Ryan Xu</div>
+                <div className="text-sm font-thin text-gray-300">in 4 days</div>
+                <div className="flex justify-between items-center mt-2">
+                  <div className="text-sm text-gray-300">
+                    <span className="bg-gray-800 px-2 py-1 rounded">Previous Notes</span>
+                    <span className="bg-gray-800 px-2 py-1 mx-2 rounded">Key Concepts</span>
+                  </div>
+                  <div className="text-gray-400 cursor-pointer text-3xl">...</div>
+                </div>
+              </div>
             </div>
-            <div className="bg-blue-900 text-gray-200 p-3 rounded">
-              <div className="font-bold">Algebra Basics</div>
-              <div className="text-sm text-gray-300">Mark Smith - in 7 days</div>
-              <div className="text-gray-400 text-right cursor-pointer mt-2">...</div>
+            <div className="bg-blue-900 text-gray-200 p-3 rounded relative">
+              <img
+                src="src\assets\phil.jpg"
+                alt="Philosophy"
+                className="absolute inset-0 w-full h-full object-cover opacity-10 rounded"
+              />
+              <div className="relative z-10">
+                <span>You're teaching</span>
+                <h3 className="font-bold">Calculus and Vectors</h3>
+                <div className="text-md text-gray-300">to Donda West</div>
+                <div className="text-sm font-thin text-gray-300">in a week</div>
+                <div className="flex justify-between items-center mt-2">
+                  <div className="text-sm text-gray-300">
+                    <span className="bg-gray-800 px-2 py-1 rounded">Materials</span>
+                    <span className="bg-gray-800 px-2 py-1 mx-2 rounded">Key Concepts</span>
+                  </div>
+                  <div className="text-gray-400 cursor-pointer text-3xl">...</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
