@@ -4,14 +4,19 @@ function Students() {
   const [view, setView] = useState('students');
 
   const students = [
-    { name: 'Alice', skills: ['Math', 'Science'] },
-    { name: 'Bob', skills: ['English', 'History'] },
-    { name: 'Charlie', skills: ['Programming', 'Design'] },
+    { name: 'Alice', skills: ['Math', 'Science'], availability: 'Mon-Fri', quote: 'Learning is fun!' },
+    { name: 'Bob', skills: ['English', 'History'], availability: 'Weekends', quote: 'History is my passion.' },
+    { name: 'Charlie', skills: ['Programming', 'Design'], availability: 'Evenings', quote: 'Code is poetry.' },
+  ];
+
+  const tutors = [
+    { name: 'David', expertise: ['Math', 'Physics'], availability: 'Mon-Fri', quote: 'Teaching is my calling.' },
+    { name: 'Eve', expertise: ['English', 'Literature'], availability: 'Weekends', quote: 'Words are powerful.' },
   ];
 
   return (
     <div className="bg-gray-900 min-h-screen p-6">
-      <h1 className="text-4xl text-white font-bold mb-6">Students</h1>
+      <h1 className="text-4xl text-white font-bold mb-6">Classmates</h1>
       <div className="flex justify-between items-center mb-6">
         <button
           className={`px-4 py-2 rounded ${
@@ -36,6 +41,8 @@ function Students() {
             <div key={index} className="flex justify-between items-center bg-gray-800 p-4 rounded">
               <div>
                 <h2 className="text-xl text-white font-semibold">{student.name}</h2>
+                <p className="text-gray-400 text-sm">Availability: {student.availability}</p>
+                <p className="text-gray-400 text-sm italic">"{student.quote}"</p>
                 <div className="flex space-x-2 mt-2">
                   {student.skills.map((skill, idx) => (
                     <span key={idx} className="bg-blue-600 text-white text-sm px-2 py-1 rounded">
@@ -50,8 +57,18 @@ function Students() {
         </div>
       )}
       {view === 'tutors' && (
-        <div className="text-gray-400 text-center">
-          <p>Tutors view is under construction.</p>
+        <div className="space-y-4">
+          {tutors.map((tutor, index) => (
+            <div key={index} className="flex justify-between items-center bg-gray-800 p-4 rounded">
+              <div>
+                <h2 className="text-xl text-white font-semibold">{tutor.name}</h2>
+                <p className="text-gray-400 text-sm">Expertise: {tutor.expertise.join(', ')}</p>
+                <p className="text-gray-400 text-sm">Availability: {tutor.availability}</p>
+                <p className="text-gray-400 text-sm italic">"{tutor.quote}"</p>
+              </div>
+              <button className="bg-green-500 text-white px-4 py-2 rounded">Message</button>
+            </div>
+          ))}
         </div>
       )}
     </div>
