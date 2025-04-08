@@ -59,7 +59,7 @@ function Dashboard() {
           <p className="text-gray-600">Access study materials and helpful links.</p>
         </div>
       </div>
-      <div className="col-span-1 md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow p-6">
+      <div className="col-span-1 md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow px-6 py-4 m-4">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold">{monthNames[currentMonth]} {currentYear}</h2>
           <div className="space-x-2">
