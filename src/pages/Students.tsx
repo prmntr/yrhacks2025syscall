@@ -5,13 +5,29 @@ function Students() {
 
   const students = [
     { name: 'Alice', skills: ['Math', 'Science'], availability: 'Mon-Fri', quote: 'Learning is fun!' },
-    { name: 'Bob', skills: ['English', 'History'], availability: 'Weekends', quote: 'History is my passion.' },
-    { name: 'Charlie', skills: ['Programming', 'Design'], availability: 'Evenings', quote: 'Code is poetry.' },
+    { name: 'Bob', skills: ['English', 'History'], availability: 'Weekends', quote: 'hey there' },
+    { name: 'Charlie', skills: ['Programming', 'Design'], availability: 'Evenings', quote: 'im charlie' },
   ];
 
   const tutors = [
-    { name: 'David', expertise: ['Math', 'Physics'], availability: 'Mon-Fri', quote: 'Teaching is my calling.' },
-    { name: 'Eve', expertise: ['English', 'Literature'], availability: 'Weekends', quote: 'Words are powerful.' },
+    {
+      name: 'David',
+      expertise: ['Math', 'Physics'],
+      availability: 'Mon-Fri',
+      quote: 'hey!',
+    },
+    {
+      name: 'Eve',
+      expertise: ['English', 'Literature'],
+      availability: 'Weekends',
+      quote: 'Words are powerful.',
+    },
+    {
+      name: 'Bryan',
+      expertise: ['Programming', 'Physics'],
+      availability: 'Weekends',
+      quote: 'Experience in node, express, react, react native, and mongodb. Here to help!',
+    },
   ];
 
   return (
