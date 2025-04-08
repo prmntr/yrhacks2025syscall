@@ -21,7 +21,7 @@ function Profile() {
       </div>
 
       {/* Profile Content */}
-      <div className="mx-4 mt-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 min-h-screen">
+      <div className="mx-4 mt-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 min-h-[50vh]">
         <div className="flex flex-row items-center px-5 py-5">
           {/* Profile Image */}
           <img
@@ -32,7 +32,7 @@ function Profile() {
           {/* Name and Description */}
           <div className="ml-6">
             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">John Doe</h5>
-            <span className="text-md text-gray-500 dark:text-white">Grade 10</span>
+            <span className="text-md text-gray-500 dark:text-white">Grade 11</span>
             <p className="text-gray-400 dark:text-gray-400">Bayview Secondary School</p>
             {/* Tags */}
             <div className="mt-2 flex space-x-2">
@@ -55,20 +55,20 @@ function Profile() {
             <div className="ml-20">
               <span className="text-sm text-gray-500 dark:text-gray-400">Students Tutored</span>
               <h6 className="mb-1 text-center text-3xl font-bold text-gray-900 dark:text-white">
-                3
+                14
               </h6>
             </div>
             <div className="ml-12">
               <span className="text-sm text-gray-500 dark:text-gray-400">Educated Hours</span>
               <h6 className="mb-1 text-center text-3xl font-bold text-gray-900 dark:text-white">
-                24
+                48
               </h6>
             </div>
             <div className="lg:ml-12 flex flex-col items-center">
               <span className="text-sm text-gray-500 dark:text-gray-400 mb-0.5">
-                Teaching Since
+                Tutoring Since
               </span>
-              <h6 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">Jan 2025</h6>
+              <h6 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">March 2023</h6>
             </div>
           </div>
         </div>
