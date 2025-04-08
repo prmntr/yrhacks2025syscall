@@ -12,11 +12,11 @@ function Profile() {
           {/* Name and Description */}
           <div className="ml-6">
             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">John Doe</h5>
-            <span className="text-sm text-gray-500 dark:text-gray-400">Tutor and Student</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">Grade 69</span>
           </div>
           <div className="mx-9">
-            <h6 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">24</h6>
             <span className="text-sm text-gray-500 dark:text-gray-400">Students Tutored</span>
+            <h6 className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">24</h6>
           </div>
         </div>
         <div className="flex justify-center  md:mt-6 mb-5 mt-5">
