@@ -74,7 +74,7 @@ function Homepage() {
 
 
       <footer className="text-center p-4 text-sm bg-gray-800 mt-8" role="contentinfo">
-        <p>&copy; {new Date().getFullYear()} © 2025 Tutorly. Some rights reserved. Proudly Canadian 🍁</p>
+        <p>&copy; {new Date().getFullYear()} Tutorly. Some rights reserved. Proudly Canadian 🍁</p>
       </footer>
     </div> // ✅ this was missing
   );
