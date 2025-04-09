@@ -1,7 +1,7 @@
 function Homepage() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200 overflow-hidden">
-      <header className="bg-gray-800 min-h-160 relative">
+      <header className="bg-gray-800 min-h-120 relative">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover opacity-80 z-0"
           src="src/assets/high-school-students-tutorly.mp4"
@@ -20,7 +20,20 @@ function Homepage() {
             >
             My Dashboard
             </button>
+            <div className="absolute bottom-4 left-1/2 transform">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-gray-200 animate-bounce"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
         </div>
+
       </header>
 
       <main id="main" className="max-w-7xl mx-auto p-8 space-y-16" role="main">
@@ -32,7 +45,7 @@ function Homepage() {
               About Us
             </h2>
             <p>
-              EduPlatform is a student-first dashboard built to simplify educational workflows and
+              Tutorly is a student-first dashboard built to simplify educational workflows and
               promote productivity.
             </p>
           </div>
@@ -40,7 +53,7 @@ function Homepage() {
           {/* Right side: Our Mission */}
           <div className="w-full md:w-1/2 space-y-6">
             <h2 className="text-3xl font-semibold mb-4" role="heading" aria-level={2}>
-              Our Mission
+              Our Methods
             </h2>
             <p>
               We leverage cutting-edge technology to provide personalized dashboards, track

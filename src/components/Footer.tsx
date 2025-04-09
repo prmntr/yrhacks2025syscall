@@ -38,9 +38,9 @@ function Footer() {
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2025{' '}
             <a href="/" className="hover:underline">
-              Tutorly
+              Tutorly by SYSCALL
             </a>
-            . Some rights reserved. Proudly Canadian 🍁
+            . All rights reserved. Proudly Canadian 🍁
           </span>
         </div>
       </footer>

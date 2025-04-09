@@ -4,9 +4,9 @@ function Students() {
   const [view, setView] = useState('students');
 
   const students = [
-    { name: 'Alice', skills: ['Math', 'Science'], availability: 'Mon-Fri', quote: 'Learning is fun!' },
+    { name: 'Alice', skills: ['Math', 'English', 'Turkish'], availability: 'Mon-Fri', quote: 'Learning is fun!' },
     { name: 'Bob', skills: ['English', 'History'], availability: 'Weekends', quote: 'hey there' },
-    { name: 'Charlie', skills: ['Programming', 'Design'], availability: 'Evenings', quote: 'im charlie' },
+    { name: 'Charlie', skills: ['English', "Chinese (Mandarin)"], availability: 'Evenings', quote: 'Ready to learn.' },
   ];
 
   const tutors = [

@@ -124,14 +124,26 @@ function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-800 shadow-xl rounded-lg p-4 col-span-2 md:col-span-1">
-          <h2 className="text-xl font-semibold mb-4 text-gray-100">Stats & Tasks</h2>
-          <ul className="text-gray-300 space-y-2">
-            <li>Lessons Completed: 12</li>
-            <li>Pending Assignments: 3</li>
-            <li>Next Exam: April 15</li>
-            <li>Attendance: 96%</li>
-          </ul>
+        <div className="bg-gray-800 shadow-xl rounded-lg p-6 col-span-2 md:col-span-1">
+          <h2 className="text-xl font-bold mb-4 text-gray-100">Stats & Tasks</h2>
+          <div className="space-y-4">
+            <div className="flex justify-between items-center bg-gray-700 p-3 rounded">
+              <span className="text-gray-300">Lessons Completed</span>
+              <span className="text-gray-100 font-semibold">12</span>
+            </div>
+            <div className="flex justify-between items-center bg-gray-700 p-3 rounded">
+              <span className="text-gray-300">Pending Assignments</span>
+              <span className="text-gray-100 font-semibold">3</span>
+            </div>
+            <div className="flex justify-between items-center bg-gray-700 p-3 rounded">
+              <span className="text-gray-300">Next Assessment</span>
+              <span className="text-gray-100 font-semibold">April 15</span>
+            </div>
+            <div className="flex justify-between items-center bg-gray-700 p-3 rounded">
+              <span className="text-gray-300">Attendance</span>
+              <span className="text-gray-100 font-semibold">96%</span>
+            </div>
+          </div>
         </div>
         <div className="bg-gray-800 shadow-xl rounded-lg px-6 py-4 col-span-2 md:col-span-1">
           <div className="flex items-center justify-between mb-4">

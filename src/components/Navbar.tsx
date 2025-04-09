@@ -84,6 +84,14 @@ function Navbar() {
                 Profile
               </a>
             </li>
+            <li>
+              <button
+                onClick={() => console.log("Sign out clicked")}
+                className="block py-8 px-4 text-white text-s bg-blue-500 rounded-md hover:bg-blue-600 md:p-2"
+              >
+                Sign Out
+              </button>
+            </li>
           </ul>
         </div>
       </div>

@@ -39,11 +39,20 @@ function Profile() {
               <span className="px-2 py-1 text-xs font-medium text-white bg-blue-500 rounded-lg">
                 Teacher
               </span>
+              <span className="px-2 py-1 text-xs font-medium text-white bg-red-500 rounded-lg">
+                Student
+              </span>
               <span className="px-2 py-1 text-xs font-medium text-white bg-green-500 rounded-lg">
                 English
               </span>
               <span className="px-2 py-1 text-xs font-medium text-white bg-purple-500 rounded-lg">
                 Math
+              </span>
+              <span className="px-2 py-1 text-xs font-medium text-white bg-orange-500 rounded-lg">
+                Programming
+              </span>
+              <span className="px-2 py-1 text-xs font-medium text-white bg-yellow-500 rounded-lg">
+                Chinese (Cantonese)
               </span>
               <span className="mx-1 px-2 py-1 text-xs font-medium text-white bg-gray-700 rounded-lg">
                 +
